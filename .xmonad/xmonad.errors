@@ -1,0 +1,24 @@
+
+xmonad.hs:9:15: Not in scope: `spawnPipe'
+
+xmonad.hs:11:24: Not in scope: `manageDocks'
+
+xmonad.hs:12:24: Not in scope: `avoidStruts'
+
+xmonad.hs:13:21: Not in scope: `dynamicLogWithPP'
+
+xmonad.hs:13:38: Not in scope: `xmobarPP'
+
+xmonad.hs:14:11:
+    `ppOutput' is not a (visible) constructor field name
+
+xmonad.hs:14:22: Not in scope: `hPutStrLn'
+
+xmonad.hs:15:11:
+    `ppTitle' is not a (visible) constructor field name
+
+xmonad.hs:15:21: Not in scope: `xmobarColor'
+
+xmonad.hs:15:46: Not in scope: `shorten'
+
+xmonad.hs:20:11: Not in scope: `additionalKeys'
