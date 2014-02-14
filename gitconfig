@@ -2,7 +2,9 @@
     name = Lope Emano
     email = lopegwapo@gmail.com
 [alias]
-    st = status
+    s = status
+    p = push origin
+    d = diff
     ci = commit
     co = checkout
     br = branch
