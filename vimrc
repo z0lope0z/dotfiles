@@ -27,6 +27,7 @@ set backspace=indent,eol,start
 set linebreak
 set foldmethod=indent
 set foldlevel=99
+cmap w!! %!sudo tee > /dev/null %
 nmap <C-e> :e#<CR>
 imap jk <Esc> 
 vno ~/.xmobarrcM Ìmap jk <Esc> 
@@ -53,6 +54,8 @@ vnoremap <C-Z> <C-C>:update<CR>
 inoremap <C-Z> <C-O>:update<CR>
 "nerd tree
 nmap <silent> <special> <C-t> :NERDTreeToggle<RETURN>
+"close nerdtree if it's the only thing left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 "sudo save
 "command W w !sudo tee % >/dev/null
 "sorting
