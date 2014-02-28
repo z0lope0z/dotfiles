@@ -17,7 +17,7 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias screen22='ssh -t test screen -R 25098.13708.pts-0.ip-10-122-25-42'
-alias screendung='ssh -t test-dung screen -R 14646.8342.pts-2.domU-12-31-38-06-C1-FA'
+alias screendung='ssh -t test-dung.lobangclub.com screen -R 14646.8342.pts-2.domU-12-31-38-06-C1-FA'
 alias rc='python manage.py celeryd_multi restart w1 --settings=save22oscar.settings.development; tail -f w1.log'
 alias screenez='ssh -t ez-test screen -R'
 alias space='sudo du -ks ./* | sort -n'
@@ -34,6 +34,10 @@ alias xclip='xclip -selection c'
 alias micard='. /home/lope/tooch/ForSunrise/env/micard/bin/activate'
 
 # Extra stuff
+function chpwd() {
+    emulate -L zsh
+    ls
+}
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
