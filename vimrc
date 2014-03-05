@@ -52,6 +52,8 @@ nnoremap <C-H> <C-W><C-H>
 noremap <C-Z> :update<CR>
 vnoremap <C-Z> <C-C>:update<CR>
 inoremap <C-Z> <C-O>:update<CR>
+"pasting
+set pastetoggle=<F2>
 "nerd tree
 nmap <silent> <special> <C-t> :NERDTreeToggle<RETURN>
 "close nerdtree if it's the only thing left
