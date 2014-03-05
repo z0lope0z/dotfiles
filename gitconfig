@@ -4,6 +4,8 @@
 [alias]
     s = status
     p = push origin
+    pl = pull origin
+    f = fetch 
     d = diff
     ci = commit
     co = checkout

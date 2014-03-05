@@ -34,10 +34,6 @@ alias xclip='xclip -selection c'
 alias micard='. /home/lope/tooch/ForSunrise/env/micard/bin/activate'
 
 # Extra stuff
-function chpwd() {
-    emulate -L zsh
-    ls
-}
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -57,7 +53,7 @@ function chpwd() {
 # DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
@@ -68,6 +64,20 @@ function chpwd() {
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
+# history specific options
+setopt hist_allow_clobber
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt hist_no_store
+setopt hist_expire_dups_first
+setopt hist_find_no_dups
+setopt extended_history
+setopt inc_append_history
+
+# autojump
+if [ -f /usr/share/autojump/autojump.zsh ]; then
+    source /usr/share/autojump/autojump.zsh
+fi
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
