@@ -7,8 +7,12 @@ autocmd! bufwritepost .vimrc source %
 "rebind leader key
 let mapleader=","
 set ttymouse=xterm2
+"encoding for special chars
+scriptencoding utf-8
+set encoding=utf-8
 set hidden "hidden buffers enabled
 set number "line number
+nnoremap <F3> :set nonumber!<CR>
 set mouse=a "mouse clickable
 colors jellybeans
 "search improvements
@@ -30,6 +34,7 @@ set foldlevel=99
 cmap w!! %!sudo tee > /dev/null %
 nmap <C-e> :e#<CR>
 imap jk <Esc> 
+vmap m, <Esc> 
 vno ~/.xmobarrcM Ìmap jk <Esc> 
 map <leader>c <c-_><c-_>
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
@@ -73,10 +78,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 "white space viewing
-set listchars="tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\
 set list
-set splitbelow
-set splitright
 set clipboard=unnamedplus
 autocmd vimenter * NERDTree | wincmd p
 "split
