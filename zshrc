@@ -94,7 +94,9 @@ export PATH="/home/lope/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/s
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/workspace
 export TERM="xterm-256color"
-source /usr/local/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -111,4 +113,4 @@ source /usr/local/bin/virtualenvwrapper.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
+export PATH=$PATH:~/.cabal/bin:~/.xmonad/bin:~/.gradle/gradle-1.11/bin
