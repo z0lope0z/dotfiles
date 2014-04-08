@@ -12,3 +12,4 @@
     br = branch
     unstage = reset HEAD --
     last = log -1 HEAD
+    set-url = remote set-url origin
