@@ -1,4 +1,4 @@
-# Path to your oh-my-zsh configuration.
+#Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -98,6 +98,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/home/lope/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/lope/Applications/sublime2:/home/lope/Applications/aptana3"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/workspace
+export JAVA_HOME=$HOME/.java/jdk1.6.0_45
+export PATH=$JAVA_HOME/bin:$PATH
+
 export TERM="xterm-256color"
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
