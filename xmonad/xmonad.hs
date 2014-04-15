@@ -131,7 +131,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
         
 
   , ((modMask, xK_p),
-     spawn "exe=`dmenu_path_c | yeganesh` && eval \"exec $exe\"")
+     spawn "dmenu_run -b")
 
   -- Mute volume.
   , ((modMask .|. controlMask, xK_m),
