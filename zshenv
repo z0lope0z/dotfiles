@@ -6,6 +6,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/workspace
 
 # Custom environment variables in alphabetical order
+export ANDROID_HOME=$HOME/.android/sdk
+export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+
 export ANDROID_STUDIO_HOME=$HOME/IDE/android-studio
 export PATH=$ANDROID_STUDIO_HOME/bin:$PATH
 
