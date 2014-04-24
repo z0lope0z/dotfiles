@@ -93,14 +93,6 @@ plugins=(git, python, django)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-export PATH="/home/lope/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/lope/Applications/sublime2:/home/lope/Applications/aptana3"
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/workspace
-export JAVA_HOME=$HOME/.java/jdk1.6.0_45
-export PATH=$JAVA_HOME/bin:$PATH
-
 export TERM="xterm-256color"
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
@@ -121,4 +113,3 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH=$PATH:~/.cabal/bin:~/.xmonad/bin:~/.gradle/gradle-1.11/bin
