@@ -33,7 +33,9 @@ alias dae='gnome-settings-daemon'
 
 alias ma='./manage.py runserver_plus'
 alias xclip='xclip -selection c'
-alias micard='. /home/lope/tooch/ForSunrise/env/micard/bin/activate'
+
+#metric
+alias chrome = 'google-chrome --proxy-server="192.168.0.1:3129"'
 
 # Extra stuff
 # Set to this to use case-sensitive completion
