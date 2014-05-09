@@ -21,6 +21,9 @@ export PATH=$GRADLE_HOME/bin:$PATH
 export JAVA_HOME=$HOME/.java/jdk1.6.0_45
 export PATH=$JAVA_HOME/bin:$PATH
 
+export NODE_HOME=$HOME/.node
+export PATH=$NODE_HOME/bin:$PATH
+
 export XMONAD_HOME=$HOME/.xmonad
 export PATH=$XMONAD_HOME/bin:$PATH
 

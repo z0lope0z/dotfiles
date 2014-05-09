@@ -35,7 +35,7 @@ alias ma='./manage.py runserver_plus'
 alias xclip='xclip -selection c'
 
 #metric
-alias chrome = 'google-chrome --proxy-server="192.168.0.1:3129"'
+alias chrome='google-chrome --proxy-server="192.168.0.1:3129"'
 
 # Extra stuff
 # Set to this to use case-sensitive completion
