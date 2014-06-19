@@ -30,6 +30,7 @@ alias clearswp='find . -name "*.swp" -exec rm -rf {} \;'
 alias findtxt='find . -maxdepth 3 -name settings_local.py -print0 | xargs -0 grep "bargain_auto"'
 alias oscar='cd ~/Save22/server/Save22-Oscar-Backend'
 alias dae='gnome-settings-daemon'
+alias touchpad='synclient TouchpadOff=1'
 
 alias ma='./manage.py runserver_plus'
 alias xclip='xclip -selection c'
@@ -91,7 +92,7 @@ fi
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git, python, django)
+plugins=(autojump, git, django, node, npm, python)
 
 source $ZSH/oh-my-zsh.sh
 
