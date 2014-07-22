@@ -6,6 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="af-magic"
+#ZSH_THEME="agnoster"
 #ZSH_THEME="gallois"
 
 # Alias
@@ -35,7 +36,7 @@ alias ma='./manage.py runserver_plus'
 alias xclip='xclip -selection c'
 
 #metric
-alias chrome='google-chrome --proxy-server="192.168.0.1:3129"'
+alias chrome='google-chrome --proxy-server="192.168.0.1:3129" --proxy-bypass-list="127.0.0.1"'
 
 # Extra stuff
 # Set to this to use case-sensitive completion
@@ -88,6 +89,9 @@ if [ -f ~/.auth ]; then
     source ~/.auth
 fi
 
+# no proxy
+export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -100,6 +104,13 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
 
+function cd() {
+    new_directory="$*";
+    if [ $# -eq 0 ]; then 
+        new_directory=${HOME};
+    fi;
+    builtin cd "${new_directory}" && ls
+}
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions

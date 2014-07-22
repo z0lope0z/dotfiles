@@ -15,11 +15,14 @@ export PATH=$ANDROID_STUDIO_HOME/bin:$PATH
 export CABAL_HOME=$HOME/.cabal
 export PATH=$CABAL_HOME/bin:$PATH
 
-export GRADLE_HOME=$HOME/.gradle/gradle-1.11
+export GRADLE_HOME=$HOME/.gradle/gradle-1.10
 export PATH=$GRADLE_HOME/bin:$PATH
 
 export JAVA_HOME=$HOME/.java/jdk1.6.0_45
 export PATH=$JAVA_HOME/bin:$PATH
+
+export MAVEN_HOME=$HOME/.m3
+export PATH=$MAVEN_HOME/bin:$PATH
 
 export NODE_HOME=$HOME/.node
 export PATH=$NODE_HOME/bin:$PATH

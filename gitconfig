@@ -13,3 +13,5 @@
     unstage = reset HEAD --
     last = log -1 HEAD
     set-url = remote set-url origin
+[http]
+	proxy = http://lope@metricbpo.com:metricbpo@192.168.0.1:3129
