@@ -36,7 +36,8 @@ alias ma='./manage.py runserver_plus'
 alias xclip='xclip -selection c'
 
 #metric
-alias chrome='google-chrome --proxy-server="192.168.0.1:3129" --proxy-bypass-list="127.0.0.1"'
+alias chrome='google-chrome --proxy-server="192.168.0.1:3129" --proxy-bypass-list="127.0.0.1;192.168.0.178"'
+alias genymotion='sudo -u lope /home/lope/Downloads/genymotion/genymotion'
 
 # Extra stuff
 # Set to this to use case-sensitive completion
