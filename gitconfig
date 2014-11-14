@@ -14,3 +14,5 @@
     last = log -1 HEAD
     set-url = remote set-url origin
 [url "https://"]
+[http]
+    proxy = http://lope@metricbpo.com:metricbpo@192.168.0.1:3129
