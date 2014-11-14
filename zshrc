@@ -37,6 +37,7 @@ alias xclip='xclip -selection c'
 
 #metric
 alias chrome='google-chrome --proxy-server="192.168.0.1:3129"'
+alias studio='./home/lope/IDE/android-studio/bin/studio.sh'
 
 # Extra stuff
 # Set to this to use case-sensitive completion
@@ -100,6 +101,10 @@ export TERM="xterm-256color"
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
+
+# Xmonad for JAVA
+# http://awesome.naquadah.org/wiki/Problems_with_Java
+wmname LG3D
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
