@@ -113,6 +113,9 @@ fi
 # http://awesome.naquadah.org/wiki/Problems_with_Java
 wmname LG3D
 
+# Xmonad external monitor
+xrandr --output CRT1 --primary --right-of LVDS --output CRT1 --auto
+
 #function cd() {
 #    new_directory="$*";
 #    if [ $# -eq 0 ]; then 

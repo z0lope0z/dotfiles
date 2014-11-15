@@ -2,6 +2,7 @@ import System.IO
 import System.Exit
 import XMonad
 import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.ICCCMFocus
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
 import XMonad.Hooks.SetWMName
@@ -305,14 +306,16 @@ main = do
  xmonad $ defaults  
       { manageHook = manageDocks <+> manageHook defaultConfig  
       , layoutHook = avoidStruts $ myLayouts
-      , logHook = dynamicLogWithPP xmobarPP  
-           { ppOutput = hPutStrLn xmproc  
-           , ppTitle = xmobarColor "#657b83" "" . shorten 100   
-           , ppCurrent = xmobarColor "#c0c0c0" "" . wrap "" ""
-           , ppSep     = xmobarColor "#c0c0c0" "" " | "
-           , ppUrgent  = xmobarColor "#ff69b4" ""
-           , ppLayout = const "" -- to disable the layout info on xmobar  
-           } 
+      , logHook = do
+                        takeTopFocus
+                        dynamicLogWithPP xmobarPP  
+                           { ppOutput = hPutStrLn xmproc  
+                           , ppTitle = xmobarColor "#657b83" "" . shorten 100   
+                           , ppCurrent = xmobarColor "#c0c0c0" "" . wrap "" ""
+                           , ppSep     = xmobarColor "#c0c0c0" "" " | "
+                           , ppUrgent  = xmobarColor "#ff69b4" ""
+                           , ppLayout = const "" -- to disable the layout info on xmobar  
+                           } 
      } 
 
 
