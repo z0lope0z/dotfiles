@@ -30,3 +30,5 @@ export PATH=$NODE_HOME/bin:$PATH
 export XMONAD_HOME=$HOME/.xmonad
 export PATH=$XMONAD_HOME/bin:$PATH
 
+export ACTIVATOR_HOME=$HOME/.activator
+export PATH=$ACTIVATOR_HOME:$PATH
