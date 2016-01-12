@@ -43,6 +43,7 @@ alias chrome='google-chrome --proxy-server="192.168.0.1:3129" --proxy-bypass-lis
 #android
 alias studio='./home/lope/IDE/android-studio/bin/studio.sh'
 alias genymotion='sudo -u lope /home/lope/Downloads/genymotion/genymotion'
+alias lc='adb logcat'
 
 # Extra stuff
 # Set to this to use case-sensitive completion
@@ -89,6 +90,7 @@ setopt inc_append_history
 if [ -f /usr/share/autojump/autojump.zsh ]; then
     source /usr/share/autojump/autojump.zsh
 fi
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # auth
 if [ -f ~/.auth ]; then
@@ -139,3 +141,10 @@ xrandr --output CRT1 --primary --right-of LVDS --output CRT1 --auto
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Ruby
+LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+  . $LUNCHY_DIR/lunchy-completion.zsh
+fi
+
+eval "$(rbenv init -)"

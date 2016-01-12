@@ -15,4 +15,12 @@
     set-url = remote set-url origin
 [url "https://"]
 [http]
-    proxy = http://lope@metricbpo.com:metricbpo@192.168.0.1:3129
+	sslverify = false
+[core]
+	excludesfile = /Users/lopeemano/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

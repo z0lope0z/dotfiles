@@ -47,8 +47,8 @@ ZSH_THEME_HG_PROMPT_CLEAN="%{$fg[blue]%}›"
 
 # git settings
 ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075](branch:"
-ZSH_THEME_GIT_PROMPT_CLEAN="(^▂^)"
-ZSH_THEME_GIT_PROMPT_DIRTY="$my_orange(⊙▂⊙)%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="(^_^)"
+ZSH_THEME_GIT_PROMPT_DIRTY="$my_orange(⊙_⊙)%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[075])%{$reset_color%}"
 
 # python virtualenv settings

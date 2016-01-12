@@ -1,4 +1,5 @@
-call pathogen#incubate()
+"call pathogen#incubate()
+call pathogen#infect('bundle/{}')
 call pathogen#infect()
 call pathogen#helptags()
 syntax on
@@ -14,7 +15,7 @@ set hidden "hidden buffers enabled
 set number "line number
 nnoremap <F3> :set nonumber!<CR>
 set mouse=a "mouse clickable
-colors jellybeans
+colorscheme darcula
 "search improvements
 set hlsearch
 set incsearch
