@@ -33,6 +33,11 @@ export PATH=$XMONAD_HOME/bin:$PATH
 export ACTIVATOR_HOME=$HOME/.activator
 export PATH=$ACTIVATOR_HOME:$PATH
 
+export PIDCAT_HOME=$HOME/.pidcat
+export PATH=$PIDCAT_HOME:$PATH
+
+export EDITOR='vim'
+
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/lopeemano/Google/Google-API/google-cloud-sdk/path.zsh.inc'
 

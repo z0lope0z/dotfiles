@@ -43,9 +43,12 @@ alias chrome='google-chrome --proxy-server="192.168.0.1:3129" --proxy-bypass-lis
 #android
 alias studio='./home/lope/IDE/android-studio/bin/studio.sh'
 alias genymotion='sudo -u lope /home/lope/Downloads/genymotion/genymotion'
-alias lc='adb logcat'
+alias lc='python $PIDCAT_HOME'
 
 # Extra stuff
+# Load zsh-syntax-highlighting.
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -103,7 +106,7 @@ export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump, git, django, node, npm, python)
+plugins=(autojump, git, django, node, npm, python, ruby, rails, rake, rbenv, gem, colored-man, jira, extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -146,5 +149,6 @@ LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
 if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
   . $LUNCHY_DIR/lunchy-completion.zsh
 fi
+
 
 eval "$(rbenv init -)"
