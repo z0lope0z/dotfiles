@@ -44,6 +44,7 @@ alias chrome='google-chrome --proxy-server="192.168.0.1:3129" --proxy-bypass-lis
 alias studio='./home/lope/IDE/android-studio/bin/studio.sh'
 alias genymotion='sudo -u lope /home/lope/Downloads/genymotion/genymotion'
 alias lc='python $PIDCAT_HOME'
+alias lcs='python $PIDCAT_HOME com.honestbee.consumer.staging'
 
 # Extra stuff
 # Load zsh-syntax-highlighting.
