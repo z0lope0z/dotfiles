@@ -45,6 +45,7 @@ alias studio='./home/lope/IDE/android-studio/bin/studio.sh'
 alias genymotion='sudo -u lope /home/lope/Downloads/genymotion/genymotion'
 alias lc='python $PIDCAT_HOME'
 alias lcs='python $PIDCAT_HOME com.honestbee.consumer.staging'
+alias ji='jira'
 
 # Extra stuff
 # Load zsh-syntax-highlighting.
@@ -107,7 +108,7 @@ export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump, git, django, node, npm, python, ruby, rails, rake, rbenv, gem, colored-man, jira, extract)
+plugins=(autojump git django node npm python ruby rails rake rbenv gem colored-man jira extract)
 
 source $ZSH/oh-my-zsh.sh
 
