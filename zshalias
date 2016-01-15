@@ -1,0 +1,37 @@
+# Alias
+alias ll='ls -alF'
+alias l='ls -CF'
+alias la='ls -trlAG'
+
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias screen22='ssh -t test screen -R 25098.13708.pts-0.ip-10-122-25-42'
+alias screendung='ssh -t test-dung.lobangclub.com screen -R 14646.8342.pts-2.domU-12-31-38-06-C1-FA'
+alias rc='python manage.py celeryd_multi restart w1 --settings=save22oscar.settings.development; tail -f w1.log'
+alias screenez='ssh -t ez-test screen -R'
+alias space='sudo du -ks ./* | sort -n'
+alias space2='du -h --max-depth=1'
+alias count='select count(*) from pg_stat_activity'
+alias a='activator'
+alias g='git'
+alias c='clear'
+alias clearpyc='find . -name "*.pyc" -exec rm -rf {} \;'
+alias clearswp='find . -name "*.swp" -exec rm -rf {} \;'
+alias findtxt='find . -maxdepth 3 -name settings_local.py -print0 | xargs -0 grep "bargain_auto"'
+alias oscar='cd ~/Save22/server/Save22-Oscar-Backend'
+alias dae='gnome-settings-daemon'
+alias touchpad='synclient TouchpadOff=1'
+
+alias ma='./manage.py runserver_plus'
+alias xclip='xclip -selection c'
+
+#metric
+alias chrome='google-chrome --proxy-server="192.168.0.1:3129" --proxy-bypass-list="127.0.0.1;192.168.0.178"'
+
+#android
+alias studio='./home/lope/IDE/android-studio/bin/studio.sh'
+alias genymotion='sudo -u lope /home/lope/Downloads/genymotion/genymotion'
+alias lc='python $PIDCAT_HOME'
+alias lcs='python $PIDCAT_HOME com.honestbee.consumer.staging'
+alias ji='jira'
