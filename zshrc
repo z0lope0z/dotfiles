@@ -11,7 +11,6 @@ ZSH_THEME="af-magic"
 
 # Alias
 alias ll='ls -alF'
-alias la='ls -A'
 alias l='ls -CF'
 
 alias zshconfig="vim ~/.zshrc"
@@ -111,6 +110,8 @@ export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
 plugins=(autojump git django node npm python ruby rails rake rbenv gem colored-man jira extract)
 
 source $ZSH/oh-my-zsh.sh
+
+alias la='ls -trlAG'
 
 export TERM="xterm-256color"
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
