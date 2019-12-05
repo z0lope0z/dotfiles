@@ -39,7 +39,7 @@ export PATH=$PIDCAT_HOME:$PATH
 export EDITOR='vim'
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/lopeemano/Google/Google-API/google-cloud-sdk/path.zsh.inc'
+# source '/Users/lopeemano/Google/Google-API/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/Users/lopeemano/Google/Google-API/google-cloud-sdk/completion.zsh.inc'
+# source '/Users/lopeemano/Google/Google-API/google-cloud-sdk/completion.zsh.inc'

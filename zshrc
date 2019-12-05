@@ -1,4 +1,4 @@
-#Path to your oh-my-zsh configuration.
+# Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -32,7 +32,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
@@ -70,7 +70,7 @@ export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump git django node npm python ruby rails rake rbenv gem colored-man jira extract)
+plugins=(autojump git django node npm python ruby rake rbenv gem jira extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,10 +86,10 @@ fi
 
 # Xmonad for JAVA
 # http://awesome.naquadah.org/wiki/Problems_with_Java
-wmname LG3D
+# wmname LG3D
 
 # Xmonad external monitor
-xrandr --output CRT1 --primary --right-of LVDS --output CRT1 --auto
+# xrandr --output CRT1 --primary --right-of LVDS --output CRT1 --auto
 
 #function cd() {
 #    new_directory="$*";
@@ -121,3 +121,5 @@ fi
 
 
 eval "$(rbenv init -)"
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+

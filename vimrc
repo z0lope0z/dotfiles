@@ -158,3 +158,7 @@ onoremap <silent> ]L :call NextIndent(1, 1, 1, 1)<CR>
 "swap colon and semi-colon
 " nnoremap ; :
 " nnoremap : ;
+
+" auto close nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
