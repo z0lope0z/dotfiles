@@ -123,3 +123,7 @@ fi
 eval "$(rbenv init -)"
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+if [ -z "$TMUX" ]
+then
+    tmux attach -t TMUX || tmux new -s TMUX
+fi
